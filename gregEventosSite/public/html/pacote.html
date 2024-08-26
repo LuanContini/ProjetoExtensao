@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opções de Pacote - Empresa de Eventos</title>
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/servicos.css" />
+    <style>
+
+
+      .services {
+        padding: 40px 0;
+        background-color: #fff;
+      }
+
+      .services h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .card {
+        position: relative;
+        width: 350px;
+        height: 300px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card-content {
+        padding: 20px;
+        z-index: 1;
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="../index.html" class="logo">Greg Eventos</a>
+        <ul class="nav-links">
+          <li><a href="tecnicos.html">Técnicos</a></li>
+          <li><a href="servicos.html">O que fazemos</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="pacote.html">Opções de pacote</a></li>
+        </ul>
+        <div class="nav-direita">
+          <a href="contato.html">Contato</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="services">
+      <div class="container">
+        <h1>Opções de Pacote</h1>
+        <div class="cards-container">
+          <!-- Torres -->
+          <div class="card">
+            <img
+              src="../imagens/fotoTorres.jpg"
+              alt="Torres"
+              class="card-image"
+            />
+            <div class="card-content">
+              <h2>Torres</h2>
+              <p>
+                Oferecemos pacotes que incluem torres de estrutura robusta,
+                ideais para suportar grandes displays e iluminação. Nossas
+                torres são projetadas para garantir estabilidade e segurança
+                durante o evento.
+              </p>
+            </div>
+          </div>
+
+          <!-- Trave -->
+          <div class="card">
+            <img
+              src="../imagens/fotoTrave.jpg"
+              alt="Trave"
+              class="card-image"
+            />
+            <div class="card-content">
+              <h2>Trave</h2>
+              <p>
+                As traves são versáteis e podem ser usadas para suportar
+                iluminação, banners e outros equipamentos. Disponibilizamos
+                traves de diferentes tamanhos e configurações para atender às
+                necessidades específicas do seu evento.
+              </p>
+            </div>
+          </div>
+
+          <!-- U -->
+          <div class="card">
+            <img
+              src="../imagens/fotoUComAsaLateral.jpg"
+              alt="U"
+              class="card-image"
+            />
+            <div class="card-content">
+              <h2>U</h2>
+              <p>
+                O pacote U é ideal para eventos que precisam de uma estrutura em
+                formato de U, oferecendo um visual elegante e funcional.
+                Perfeito para apresentações e exibições.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="../imagens/fotoPalco.jpg"
+              alt="Quadrado"
+              class="card-image"
+            />
+            <div class="card-content">
+              <h2>Quadrado</h2>
+              <p>
+                O formato quadrado é ideal para eventos que necessitam de uma
+                estrutura sólida e equilibrada. Pode ser usado para suportar uma
+                variedade de equipamentos e criar um ambiente organizado e
+                funcional.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quadrado com Travessa -->
+          <div class="card">
+            <img
+              src="../imagens/fotoQuadradoTravessaMeio.jpg"
+              alt="Quadrado com Travessa"
+              class="card-image"
+            />
+            <div class="card-content">
+              <h2>Quadrado com Travessa</h2>
+              <p>
+                Este pacote combina a estrutura quadrada com travessas
+                adicionais para maior suporte e flexibilidade. Ideal para
+                eventos que exigem uma configuração mais complexa e robusta.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quadrado/U com Asas Laterais -->
+          <div class="card">
+            <img
+              src="../imagens/fotoUComAsaLateral.jpg"
+              alt="Quadrado/U com Asas Laterais"
+              class="card-image"
+            />
+            <div class="card-content">
+              <h2>Quadrado/U com Asas Laterais</h2>
+              <p>
+                A estrutura em formato quadrado ou U com asas laterais oferece
+                um design expansivo e impactante. Ideal para eventos que
+                necessitam de um visual impressionante e suporte adicional.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Greg Eventos. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,379 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+nav {
+  background-color: #333;
+  padding: 1rem 2rem;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 2.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  padding-left: 0;
+}
+
+nav .nav-links li {
+  margin: 0 20px;
+}
+
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+  color: #ddd;
+  cursor: pointer;
+}
+
+.nav-direita {
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.nav-direita a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-direita a:hover {
+  color: #ddd;
+}
+
+.resumo {
+  position: relative;
+  padding: 40px 0;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 30vh;
+}
+
+.carousel-container {
+  display: flex;
+  width: 200%;
+  height: 100%;
+  animation: slide 30s linear infinite;
+}
+
+.carousel-item {
+  flex: 0 0 20%; /* Ajusta para exibir 5 imagens ao mesmo tempo */
+  height: 100%;
+  display: flex;
+  align-items: flex-end; /* Alinha as imagens na parte inferior */
+  justify-content: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que as imagens cubram o contêiner */
+  object-position: center; /* Alinha a imagem na parte inferior */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.resumo-importancia {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resumo-importancia h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.resumo-importancia p {
+  margin: 10px 0 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.hero {
+  background: url("https://source.unsplash.com/1600x900/?event") no-repeat
+    center center/cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.hero .btn {
+  background-color: #ff5733;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #ff4500;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.about,
+.services,
+.contact,
+.resumo {
+  background-color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.about h1,
+.services h1,
+.contact h1,
+.resumo h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p,
+.services p,
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.resumo h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.resumo-topico {
+  width: 95%; /* Ajuste da largura máxima */
+  background-color: #eaeaea;
+  padding: 20px;
+  margin: 20px auto; /* Centraliza o elemento horizontalmente */
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.resumo-topico h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.resumo-topico p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.resumo-topico:hover {
+  background-color: #d4d4d4;
+  cursor: pointer;
+}
+
+.tecnicos {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.tecnico-card {
+  display: flex;
+  align-items: center;
+  background-color: #eaeaea;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 80%;
+  text-align: left;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tecnico-card:hover {
+  transform: scale(1.05);
+}
+
+.tecnico-foto {
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  margin-right: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tecnico-info {
+  flex: 1;
+}
+
+.tecnico-card h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.tecnico-card p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #ff4500;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  nav .container {
+    flex-direction: column;
+  }
+
+  nav .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .tecnico-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tecnico-foto {
+    margin: 0 0 20px;
+  }
+
+  .carousel-item {
+    flex: 0 0 50%; /* Mostra apenas dois itens por vez em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%; /* Mostra um item por vez em telas bem pequenas */
+  }
+
+  .resumo-topico,
+  .tecnico-card {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .tecnico-foto {
+    width: 100px;
+    height: 150px;
+  }
+
+  nav .nav-links li {
+    margin: 5px 0;
+  }
+}

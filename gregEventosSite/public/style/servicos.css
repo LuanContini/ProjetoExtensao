@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+nav {
+  background-color: #333;
+  padding: 1rem 2rem;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 2.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  padding-left: 0;
+}
+
+nav .nav-links li {
+  margin: 0 20px;
+}
+
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+  color: #ddd;
+  cursor: pointer;
+}
+
+.nav-direita {
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.nav-direita a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-direita a:hover {
+  color: #ddd;
+}
+
+.services {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.services h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+
+  h2 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(253, 252, 252);
+  }
+  .card-content p {
+    transition: ease-out 0.3s ease;
+    color: transparent;
+  }
+}
+
+.card-content {
+  padding: 20px;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-content h2 {
+  margin-top: 0;
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  z-index: 0;
+}
+
+.card:hover .card-image {
+  opacity: 0.9;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  nav .container {
+    flex-direction: column;
+  }
+
+  nav .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-direita {
+    margin-top: 10px;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .card-content h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav .logo {
+    font-size: 2rem;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .card-content h2 {
+    font-size: 18px;
+  }
+
+  .nav-direita {
+    font-size: 18px;
+  }
+
+  .services h1 {
+    font-size: 1.5rem;
+  }
+}
